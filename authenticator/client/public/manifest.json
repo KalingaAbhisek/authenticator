@@ -6,7 +6,7 @@
   "description": "Capture part of the screen, scan QR codes, and generate OTP.",
   "permissions": ["tabs", "storage", "activeTab", "scripting", "identity", "offscreen","alarms"],
   "oauth2": {
-    "client_id": "537289145594-9ph1g0pql3s5nn41cmgb96g6hc8bse71.apps.googleusercontent.com",
+    "client_id": "",
     "scopes": [
         "https://www.googleapis.com/auth/userinfo.email",
         "https://www.googleapis.com/auth/userinfo.profile"
