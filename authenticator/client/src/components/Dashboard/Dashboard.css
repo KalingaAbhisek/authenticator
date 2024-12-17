@@ -1,0 +1,103 @@
+.authenticator-container {
+    width: 300px;
+    height: 470px;
+    border: 1px solid #ccc;
+    /* border-radius: 8px; */
+    padding: 10px;
+    font-family: Arial, sans-serif;
+    background-color: #f7f7f7;
+  }
+  
+  .authenticator-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 5px;
+  }
+  
+  .settings-icon{
+    font-size: 18px;
+    cursor: pointer;
+  }
+
+  .scanner-icon{
+    width: 18px;  
+    height: 18px;
+    margin-left: 8px; 
+    object-fit: contain;
+    display: block; 
+    cursor: pointer;
+  }
+  
+  .edit-icon {
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  h3 {
+    margin: 0;
+    font-size: 16px;
+    font-weight: 600;
+  }
+  
+  .authenticator-body {
+    margin: 20px 0;
+    text-align: center;
+  }
+  
+  .no-accounts {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #666;
+  }
+  
+  .key-icon {
+    font-size: 40px;
+    color: #aaa;
+    transform: scaleX(-1);
+  }
+  
+  p {
+    margin: 10px 0;
+    font-size: 14px;
+    color: #333;
+  }
+  
+  .learn-more-link {
+    color: #007bff;
+    text-decoration: none;
+    font-size: 14px;
+    text-decoration: underline;
+  }
+  
+  .learn-more-link:hover {
+    text-decoration: underline;
+  }
+  
+  .add-account-button {
+    width: 100%;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 14px;
+  }
+  
+  .add-account-button:hover {
+    background-color: #0056b3;
+  }
+  
+  .account-list {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .account-list li {
+    font-size: 14px;
+    margin: 5px 0;
+  }
+  
