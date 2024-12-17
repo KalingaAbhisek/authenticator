@@ -1,0 +1,54 @@
+{
+  "manifest_version": 3,
+    "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAxcyzsZmN/jBQ5872ku95KB2zwZHwzSRi9Pu7tIJZgUIa5zE3qbLecoHzWapZiPDIOJ6qvHaMFiP3Z3sfHTo4fBbNqk0CRLylZyOjtarlYo29djo4AgAyCDwXuGLABVvKiHbnL+kYw+qBAbB9nnIFKu1cYKQtMS8vlovQO/lBEjwfFyd+dKpl1Zkx3eBj50lmHgAyZDb2LhuRswf+5Fnzp7y21mRo2AWk5QwOuPt1STGqTtMdV3ntYJWxGDmBVZtJjEdB28De598uAKzg07HUPADQ8zHIg4gzQ8VJpQ/LLpzFj/+aPuTAFe6lrtRdRqZrLN52Ys7G3HKb3Fw5DOxhBQIDAQAB",
+  "name": "QR OTP Generator",
+  "version": "1.0",
+  "description": "Capture part of the screen, scan QR codes, and generate OTP.",
+  "permissions": ["tabs", "storage", "activeTab", "scripting", "identity", "offscreen","alarms"],
+  "oauth2": {
+    "client_id": "537289145594-9ph1g0pql3s5nn41cmgb96g6hc8bse71.apps.googleusercontent.com",
+    "scopes": [
+        "https://www.googleapis.com/auth/userinfo.email",
+        "https://www.googleapis.com/auth/userinfo.profile"
+    ],
+    "redirect_uri": "https://bbfimcoggpkaalhmalkbppgncpofiieb.chromiumapp.org"
+  },
+  "host_permissions": [
+    "https://totp-authenticator-1.firebaseapp.com/*",
+    "https://*.firebaseio.com/*",
+    "http://localhost:3000/*",
+    "https://apis.google.com/*",
+    "https://www.developer.chrome.com/*",
+    "https://*.google.com/*",
+    "https://accounts.google.com/*",
+    "https://*.firebaseapp.com/*"
+
+  ],
+  "optional_host_permissions": ["https://*/*", "http://*/*"],
+  "action": {
+      "default_popup": "./index.html",
+      "default_icon": {
+          "16": "./scanner.png",
+          "48": "./scanner.png",
+          "128": "./scanner.png"
+      }
+  },
+  "background": {
+      "service_worker": "./background.js"
+  },
+  "icons": {
+      "16": "./scanner.png",
+      "48": "./scanner.png",
+      "128": "./scanner.png"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://*/*", "http://*/*"],
+      "js": ["./content.js"]
+    }
+  ],
+  "content_security_policy": {
+    "extension_pages": "script-src 'self'; object-src 'self';"
+  },
+  "sandbox": "sandbox allow-scripts allow-forms allow-popups allow-modals; script-src 'self' https://apis.google.com/js/api.js 'unsafe-inline' 'unsafe-eval' 'wasm-unsafe-eval'; child-src 'self';"
+}

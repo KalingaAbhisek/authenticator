@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/static/css/main.cf3a4b74.css",
+    "main.js": "/static/js/main.9c9e201b.js",
+    "static/media/SignInWithGoogle.svg": "/static/media/SignInWithGoogle.231ec4d8d53611023b8ce631bc8a86e1.svg",
+    "static/media/out.png": "/static/media/out.d65c83c6c90e4ae69d9d.png",
+    "index.html": "/index.html",
+    "main.cf3a4b74.css.map": "/static/css/main.cf3a4b74.css.map",
+    "main.9c9e201b.js.map": "/static/js/main.9c9e201b.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.cf3a4b74.css",
+    "static/js/main.9c9e201b.js"
+  ]
+}
